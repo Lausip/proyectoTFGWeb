@@ -11,8 +11,8 @@ import Box from '@mui/material/Box';
 import { handleRolAdmin } from '../../firebase/Auth/Auth'
 import { Text, Button, Input } from "@nextui-org/react";
 
-import logo from "../../note.png"
-import homeImage from "../../homeImage.jpeg"
+import logo from "../../note.webp"
+import homeImage from "../../homeImage.webp"
 export const LogInScreen = () => {
   const { handleLoginWithCredentials } = useContext(AuthContext)
 
