@@ -11,7 +11,8 @@ import Box from '@mui/material/Box';
 import { handleRolAdmin } from '../../firebase/Auth/Auth'
 import { Text, Button, Input } from "@nextui-org/react";
 
-
+import logo from "../../note.png"
+import homeImage from "../../homeImage.jpeg"
 export const LogInScreen = () => {
   const { handleLoginWithCredentials } = useContext(AuthContext)
 
@@ -52,15 +53,15 @@ export const LogInScreen = () => {
   }
 
   return (
-    <Grid container style={{ margin: "auto" }}>
+    <Grid container style={{ margin: "auto" ,marginTop:20}}>
       <Grid item xs={12} md={5}>
-        <img width="100%" height="100%" src="https://firebasestorage.googleapis.com/v0/b/tfgbook-f69af.appspot.com/o/homeImage.png?alt=media&token=c815f4a6-47f5-4fa6-a6ba-e7cff6992578" alt="home" style={{ objectFit: 'cover', boxSizing: "border-box", borderRadius: 30, padding: "30px 50px 60px 50px" }} />
+        <img width="100%" height="100%" src={homeImage} alt="home" style={{ objectFit: 'cover', boxSizing: "border-box", borderRadius: 30, padding: "30px 50px 60px 50px" }} />
       </Grid>
 
       <Grid container item xs={12} sm={6} alignItems="center" style={{ justifyContent: "center" }}>
         <div>
 
-          <Text css={{ margin:20,textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
+          <Text css={{ marginLeft:20,textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
             Bienvenido de nuevo!!
 
           </Text>
@@ -80,7 +81,7 @@ export const LogInScreen = () => {
 
           }}>
             <Grid container style={{ justifyContent: "center" }}>
-              <img width="100" height="100" style={{  border: 20, }} alt="icono" src="https://firebasestorage.googleapis.com/v0/b/tfgbook-f69af.appspot.com/o/note.png?alt=media&token=27c45720-e755-426d-ac8a-1a8aab74c7b5" />
+              <img width="100" height="100" style={{  border: 20, }} alt="icono" src={logo} />
             </Grid>
             <Text css={{ textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 20 }} weight="bold">
               Inicia Sesión
