@@ -1,5 +1,4 @@
-import { useContext } from "react"
-import React from 'react'
+import React,{ useContext } from "react"
 import { AuthContext } from '../context/AuthContext';
 import { HomeScreen } from "./HomeScreen";
 import { LogInScreen } from "./Authentication/LoginScreen";

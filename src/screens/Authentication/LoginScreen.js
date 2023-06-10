@@ -1,9 +1,9 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState ,useContext} from 'react';
 import Grid from '@mui/material/Grid';
-import { useContext } from 'react';
+
 import { AuthContext } from '../../context/AuthContext';
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
@@ -60,7 +60,7 @@ export const LogInScreen = () => {
       <Grid container item xs={12} sm={6} alignItems="center" style={{ justifyContent: "center" }}>
         <div>
 
-          <Text css={{ textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
+          <Text css={{ margin:20,textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
             Bienvenido de nuevo!!
 
           </Text>

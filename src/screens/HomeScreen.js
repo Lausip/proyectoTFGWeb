@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useContext} from 'react';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import InboxIcon from '@mui/icons-material/Inbox';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import { useContext } from 'react';
+
 import PersonIcon from '@mui/icons-material/Person';
 import { AuthContext } from '../context/AuthContext';
 import StarBorder from '@mui/icons-material/StarBorder';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Collapse from '@mui/material/Collapse';
 import TextsmsIcon from '@mui/icons-material/Textsms';
 import EmailIcon from '@mui/icons-material/Email';
 import { Box, Divider, List, ListItem, ListItemText, Typography, Button, Modal } from "@mui/material";
-import { Text } from "@nextui-org/react";
+import { Text,Avatar } from "@nextui-org/react";
 import { getUserAuth } from '../firebase/Auth/Auth'
 import { getFotoPerfil, getTodosReportes, eliminarReporte, eliminarLibro,bloquearPersona, eliminarComentario, enviarAvisoLibro, getFavReportes, addFavReporte, removeFavReporte, getFavReportesEmail, getEmailComentarioTexto } from '../firebase/Auth/Firestore'
 import Grid from '@mui/material/Grid';
-import { Avatar } from "@nextui-org/react";
+
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import BookIcon from '@mui/icons-material/Book';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
+
 import GradeIcon from '@mui/icons-material/Grade';
 
 export const HomeScreen = () => {
@@ -219,7 +220,7 @@ export const HomeScreen = () => {
           </List>
           <ListItemButton data-testid= "buttoncogerFavReportes" sx={{ '&:hover': { backgroundColor: "#EEF7D5", } }} onClick={() => cogerFavReportes()}>
             <ListItemIcon>
-              <StarBorder />
+              <StarBorder/>
             </ListItemIcon>
             <ListItemText primary="Favoritos" />
           </ListItemButton>
