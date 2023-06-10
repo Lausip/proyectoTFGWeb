@@ -1,7 +1,7 @@
 
 
 
-import React, { useState ,useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import Grid from '@mui/material/Grid';
 
 import { AuthContext } from '../../context/AuthContext';
@@ -53,7 +53,7 @@ export const LogInScreen = () => {
   }
 
   return (
-    <Grid container style={{ margin: "auto" ,marginTop:20}}>
+    <Grid container style={{ margin: "auto", marginTop: 20 }}>
       <Grid item xs={12} md={5}>
         <img width="100%" height="100%" src={homeImage} alt="home" style={{ objectFit: 'cover', boxSizing: "border-box", borderRadius: 30, padding: "30px 50px 60px 50px" }} />
       </Grid>
@@ -61,7 +61,7 @@ export const LogInScreen = () => {
       <Grid container item xs={12} sm={6} alignItems="center" style={{ justifyContent: "center" }}>
         <div>
 
-          <Text css={{ marginLeft:20,textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
+          <Text css={{ marginLeft: 20, textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 30 }} weight="bold">
             Bienvenido de nuevo!!
 
           </Text>
@@ -80,7 +80,8 @@ export const LogInScreen = () => {
             flexDirection: "column",
 
           }}>
-            <Grid container style={{ justifyContent: "center" }}>
+             <Grid container style={{ justifyContent: "center" }}>
+   
               <img width="100" height="100" style={{  border: 20, }} alt="icono" src={logo} />
             </Grid>
             <Text css={{ textGradient: "to right, #429EBD 0%, #8EAF20 60% ", fontSize: 20 }} weight="bold">
@@ -91,7 +92,7 @@ export const LogInScreen = () => {
               <Input status={helper.color}
                 color={helper.color}
                 helperColor={helper.color}
-                helperText={helper.text} shadow={false} clearable size="md" data-testid= "buttonsetEmail" labelPlaceholder="Email" style={{ width: 200, }} label="Email" onChange={(event) => setEmail(event.target.value)}
+                helperText={helper.text} shadow={false} clearable size="md" data-testid="buttonsetEmail" labelPlaceholder="Email" style={{ width: 200, }} label="Email" onChange={(event) => setEmail(event.target.value)}
                 contentLeft={<PersonIcon sx={{ fontSize: 25, color: "#429EBD", marginRight: 5 }} />}
               />
 
@@ -99,7 +100,7 @@ export const LogInScreen = () => {
 
             <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 4 }}>
 
-              <Input.Password data-testid= "buttonsetPassword" shadow={false} size="md" labelPlaceholder="Contraseña" status="default" style={{ width: 160 }} label="Contraseña" type="password"
+              <Input.Password data-testid="buttonsetPassword" shadow={false} size="md" labelPlaceholder="Contraseña" status="default" style={{ width: 160 }} label="Contraseña" type="password"
                 contentLeft={<LockIcon sx={{ fontSize: 25, color: "#429EBD", marginRight: 5 }} />}
                 onChange={(event) => setPassword(event.target.value)} />
 
@@ -135,7 +136,7 @@ export const LogInScreen = () => {
               '&:active': {
                 transform: 'translateY(-2px)'
               }
-            }} rounded  data-testid= "buttonhandleIncioSesion"  onPress={() => handleIncioSesion()}>
+            }} rounded data-testid="buttonhandleIncioSesion" onPress={() => handleIncioSesion()}>
               Iniciar de Sesión
             </Button>
 
