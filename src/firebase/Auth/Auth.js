@@ -1,7 +1,7 @@
 
 
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { FirebaseAuth } from '../../firebase'
+import { FirebaseAuth } from '../../config/firebase'
 
 import { getFirestore, getDoc, doc } from "firebase/firestore"
 
